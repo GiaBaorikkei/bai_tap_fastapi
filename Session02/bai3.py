@@ -1,3 +1,35 @@
+"""
+Phân tích
+
+1. Input của bài toán là gì?
+
+Danh sách students gồm các sinh viên với các thông tin: id, name, status.
+
+2. Output mong muốn là gì?
+
+API trả về danh sách các sinh viên có status = "active" theo định dạng JSON gồm message và data.
+
+Nếu không có sinh viên đang học thì trả về:
+
+{
+    "message": "Không có sinh viên đang học",
+    "data": []
+}
+
+3. Điều kiện nào dùng để xác định sinh viên đang học?
+
+Sinh viên có status == "active" được xem là đang học.
+
+4. Các bước xử lý API GET /students/active
+
+Client gửi request GET /students/active.
+FastAPI tìm endpoint tương ứng.
+Duyệt danh sách students.
+Lọc các sinh viên có status = "active".
+Nếu có dữ liệu thì trả về message và danh sách sinh viên.
+Nếu không có dữ liệu thì trả về message thông báo và data là mảng rỗng.
+"""
+
 from fastapi import FastAPI
 
 app = FastAPI()

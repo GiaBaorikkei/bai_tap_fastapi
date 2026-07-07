@@ -1,3 +1,19 @@
+"""
+Chủ đề API đã chọn
+
+Quản lý sinh viên
+
+Method	        Endpoint	            Mục đích
+GET	            /students	            Lấy danh sách sinh viên
+GET	            /students/detail	    Xem chi tiết sinh viên
+POST	        /students	            Thêm sinh viên mới
+PUT	            /students/update	    Cập nhật thông tin sinh viên
+DELETE	        /students/delete	    Xóa sinh viên
+GET	            /students/statistics	Xem thống kê sinh viên
+GET	            /students/active	    Xem danh sách sinh viên đang học (mở rộng)
+GET	            /students/top	        Xem danh sách sinh viên xuất sắc (mở rộng)
+"""
+
 from fastapi import FastAPI
 
 app = FastAPI()
