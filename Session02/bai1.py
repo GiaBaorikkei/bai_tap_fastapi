@@ -26,6 +26,6 @@ app = FastAPI()
 
 students = ["An", "Bình", "Cuong"]
 
-@app.get("/getStudents")
+@app.get("/students")
 def get_students():
     return {"Danh sách sinh viên": students}
