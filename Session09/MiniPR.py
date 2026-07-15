@@ -12,9 +12,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# ==========================================
-# 1. IN-MEMORY DATABASE (DICTIONARY)
-# ==========================================
 # Đã chuyển thành Dictionary với Key là task_id
 tasks_db = {
     1: {
