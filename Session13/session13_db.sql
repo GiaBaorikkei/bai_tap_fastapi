@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS session13_db;
+USE session13_db;
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    price DECIMAL(12,2) NOT NULL
+);
+
+CREATE TABLE menu (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    dish_code VARCHAR 
+);
